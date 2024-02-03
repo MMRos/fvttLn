@@ -1,0 +1,11 @@
+.span {
+    display: flex;
+    font-size: 5px;
+    font-weight: bold;
+    background-color: #dee1e3eb;
+    width: 20px;
+    border-style: outset;
+    border-bottom: none;
+    justify-content: center;
+    margin-right: -1px;
+}
