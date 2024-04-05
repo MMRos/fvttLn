@@ -25,9 +25,9 @@ const Habilidades = () => {
                 <div key={i} >
                     {lista.slice(i, i + numColumnas).map((elem, index) => (
                         <div key={index} style={{ display: 'flex' }}>
-                            <input id={`valor${elem}`} className='celPeqHabs color4' />
-                            <input id={`mod${elem}`} className='celPeqHabs color4' />
-                            <span id={`total${elem}`} className='celCalc color3' style={{ width: '12px', height: '12px' }} />
+                            <input id={`valor${elem}`} className='celPeqHabs' />
+                            <input id={`mod${elem}`} className='celPeqHabs' />
+                            <span id={`total${elem}`} className='celCalc' style={{ width: '12px', height: '12px' }} />
                         </div>
                     ))}
                 </div>
@@ -53,10 +53,10 @@ const Habilidades = () => {
                         <Span>Total</Span>
                     </div>
                     <div style={{ display: 'flex', marginTop: '-10px'}} >
-                        <input id='valorCuerpo' className='cabeceraCel color4' />
-                        <input id='modCuerpo' className='cabeceraCel color4' />
+                        <input id='valorCuerpo' className='cabeceraCel' />
+                        <input id='modCuerpo' className='cabeceraCel' />
                         <div style={{ marginTop: '10px'}}>
-                          <span id='totalCuerpo' className='celCalc color3' style={{ width: '13px', height: '13px' }} />
+                          <span id='totalCuerpo' className='celCalc' style={{ width: '13px', height: '13px' }} />
                         </div>
                     </div>
                 </div>
@@ -69,10 +69,10 @@ const Habilidades = () => {
                         <Span>Total</Span>
                     </div>
                     <div style={{ display: 'flex', justifyContent: 'space-around', marginTop: '-10px'}} >
-                        <input id='valorNervio' className='cabeceraCel color4' />
-                        <input id='modNervio' className='cabeceraCel color4' />
+                        <input id='valorNervio' className='cabeceraCel' />
+                        <input id='modNervio' className='cabeceraCel' />
                         <div style={{ marginTop: '10px'}}>
-                            <span id='totalNervio' className='celCalc color3' style={{ width: '13px', height: '13px' }} />
+                            <span id='totalNervio' className='celCalc' style={{ width: '13px', height: '13px' }} />
                         </div>
                     </div>
                 </div>
@@ -85,10 +85,10 @@ const Habilidades = () => {
                         <Span>Total</Span>
                     </div>
                     <div style={{ display: 'flex', marginTop: '-10px'}} >
-                        <input id='valorMente' className='cabeceraCel color4' />
-                        <input id='modMente' className='cabeceraCel color4' />
+                        <input id='valorMente' className='cabeceraCel' />
+                        <input id='modMente' className='cabeceraCel' />
                         <div style={{ marginTop: '10px'}}>
-                            <span id='totalMente' className='celCalc color3' style={{ width: '13px', height: '13px' }} />
+                            <span id='totalMente' className='celCalc' style={{ width: '13px', height: '13px' }} />
                         </div>
                     </div>
                 </div>
@@ -96,8 +96,8 @@ const Habilidades = () => {
 
 
 {/* Aquí empiezan las columnas de Raíces*/}
-            <div className="tabla color5" >
-                <div className='temas color2'>
+            <div className="tabla" >
+                <div className='temas'>
                     {genTabla(listaTemas)}
                 </div>
                 <div className='columna'>

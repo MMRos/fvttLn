@@ -2,7 +2,7 @@ import './span.css'
 
 const Span = ({ children }) => {
     return (
-        <span className= 'span color6'>
+        <span className= 'span'>
             {children}
         </span>
     )

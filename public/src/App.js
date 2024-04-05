@@ -14,7 +14,7 @@ import './App.css'
 const Boton = ({ children, tabId, activeTab, handleTabClick }) => {
   return (
     <button
-      className={activeTab === tabId ? "pestanyact color2 colorLetras" : "botones color5 colorLetras"}
+      className={activeTab === tabId ? "pestanyact" : "botones"}
       onClick={() => handleTabClick(tabId)}
     >
       {children}
@@ -57,23 +57,23 @@ function App() {
 
   return (
     <div className="App">
-      <div className='hoja color1 colorLetras'>
+      <div className='hoja'>
 
         {/* Hoja datos generales */}
         <div style={{ display: 'flex' }}>
           <Imagen />
           <ContInfoGen>
             <label className='label' > Nombre: </label>
-            <input name="nombre" className='input color4' />
+            <input name="nombre" className='input' />
 
             <label className='label' > Raza: </label>
-            <input name="raza" className='input color4' />
+            <input name="raza" className='input' />
 
             <label className='label' > Escuelas: </label>
-            <input name="escuela" className='input color4' />
+            <input name="escuela" className='input' />
 
             <label className='label' > Prestigio: </label>
-            <span id='prestigio' className='celCalc color3' />
+            <span id='prestigio' className='celCalc' />
 
 
             <label className='label' > Vida: </label>
@@ -84,23 +84,23 @@ function App() {
                 <Span>Mod</Span>
               </div>
               <div style={{ display: 'flex' }}>
-                <span id='totalVida' className='celCalc color3' />
-                <input name='contadorVida' className='celPeq color4' />
-                <input name='modVida' className='celPeq color4' />
+                <span id='totalVida' className='celCalc' />
+                <input name='contadorVida' className='celPeq' />
+                <input name='modVida' className='celPeq' />
               </div>
             </div>
 
             <label className='label' > Movimiento: </label>
-            <input name="movimiento" className='input color4' />
+            <input name="movimiento" className='input' />
 
             <label className='label' > Sentidos: </label>
-            <input name="sentidos" className='input color4' />
+            <input name="sentidos" className='input' />
 
             <label className='label' > Nodos Acumulados: </label>
             <input type='number'
 //              value={nodosAcum}
 //              onChange={ }
-              className='celPeq color4'
+              className='celPeq'
               style={{ marginTop: '-15px' }} />
 
 
@@ -113,27 +113,27 @@ function App() {
                 <Span>Max</Span>
               </div>
               <div style={{ display: 'flex' }} >
-                <span id='totalVoluntad' className='celCalc color3' />
-                <input name='contadorVoluntad' className='celPeq color4' />
-                <input name='gastMaxVoluntad' className='celPeq color4' />
-                <span id='maxVoluntad' className='celCalc color3' />
+                <span id='totalVoluntad' className='celCalc' />
+                <input name='contadorVoluntad' className='celPeq' />
+                <input name='gastMaxVoluntad' className='celPeq' />
+                <span id='maxVoluntad' className='celCalc' />
               </div>
             </div>
 
 
             <label className='label' style={{ marginTop: '-12px' }} > Movimiento Especial: </label>
-            <input name="movimiento especial" className='input color4' />
+            <input name="movimiento especial" className='input' />
 
             <label className='label' style={{ marginTop: '-12px' }} > Sentidos especiales: </label>
-            <input name="sentidos especiales" className='input color4' />
+            <input name="sentidos especiales" className='input' />
 
             <label className='label' > Renombre: </label>
             <input
               type='number'
  //             value={valorRenombre}
  //             onChange={manejaRenombre}
-              className='celPeq color4'
-              style={{ marginTop: '-15px' }} />
+              className='celPeq'
+              style={{ marginTop: '3px' }} />
           </ContInfoGen>
         </div>
 
@@ -182,8 +182,8 @@ function App() {
         </nav>
 
         {/* Contenedores */}
-        <div style={{ display: 'flex', justifyContent: 'space-around' }} >
-          <div id='pest1' className={activeTab === "pest1" ? 'contenedor color2' : 'oculto color3'} style={{ display: 'flex', justifyContent: 'space-around' }} >
+        <div>
+          <div id='pest1' className={activeTab === "pest1" ? 'contenedor' : 'oculto'}>
             <div>
               <div style={{ display: 'flex', justifyContent: 'space-around' }} >Raíces</div>
               <div>
@@ -192,16 +192,16 @@ function App() {
             </div>
 
           </div>
-          <div id='pest2' className={activeTab === "pest2" ? 'contenedor color2' : 'oculto color3'}>
+          <div id='pest2' className={activeTab === "pest2" ? 'contenedor' : 'oculto'}>
             <ArmasMagias />
           </div>
-          <div id='pest3' className={activeTab === "pest3" ? 'contenedor color2' : 'oculto color3'}>
+          <div id='pest3' className={activeTab === "pest3" ? 'contenedor' : 'oculto'}>
             <DotesNodos />
           </div>
-          <div id='pest4' className={activeTab === "pest4" ? 'contenedor color2' : 'oculto color3'}>
+          <div id='pest4' className={activeTab === "pest4" ? 'contenedor' : 'oculto'}>
             <Inventario />
           </div>
-          <div id='pest5' className={activeTab === "pest5" ? 'contenedor color2' : 'oculto color3'}>
+          <div id='pest5' className={activeTab === "pest5" ? 'contenedor' : 'oculto'}>
             <Bio />
           </div>
         </div>

@@ -2,7 +2,7 @@ import './contInfoGen.css'
 
 const ContInfoGen = ({children}) => {
     return (
-        <form className='contInfoGen color2'>
+        <form className='contInfoGen'>
             {children}
         </form>
     )

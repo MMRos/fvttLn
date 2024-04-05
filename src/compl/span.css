@@ -1,11 +1,8 @@
 .span {
     display: flex;
-    font-size: 5px;
+    font-size: 6px;
     font-weight: bold;
-    background-color: #dee1e3eb;
-    width: 20px;
-    border-style: outset;
-    border-bottom: none;
+    width: 25px;
     justify-content: center;
     margin-right: -1px;
 }
